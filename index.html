@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Bootstrap 101 Template</title>
+        <style>
+            .col-md-6 {
+                min-height: 200px;
+                border: solid black 1px;
+            }
+            .col-md-4 {
+                min-height: 200px;
+                border: solid black 1px;
+            }
+            .colColor{
+                border:1px solid black;
+                
+                text-align: center;
+            }
+            .dropButton{
+                background: #33a6cc
+            }
+
+            .blankSpace{
+                height:50px;
+            }
+
+            .alignLeft{
+                text-align: left;
+            }
+            .fitHeight{
+                height: 100%;
+            }
+            .picSpace{
+                height: 200px;
+                width: 300px;
+            }
+            .item img{
+                width: 100%;
+            }
+            .item{
+                overflow: hidden;
+            }
+        </style>
+        
+        <!--<script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>-->
+        <!--<link rel="stylesheet" href="\node_modules\bootstrap\dist\css\bootstrap.min.css">-->
+        <!--<link rel="stylesheet" href="\node_modules\bootstrap\dist\css\bootstrap-grid.min.css">-->
+        
+        <!--
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        -->
+        
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+        <!--<link rel="stylesheet" href="styles/styles.css">-->
+    </head>
+
+    <body>
+        <section class="container">
+        <div class="jumbotron text-center">Hello World</div> 
+        <header class="row">
+            
+            <div class="col-md-12 cold-sm-12 colColor  ">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li class="active" data-target="#mycarousel" data-slide-to="0"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                        <li data-target="#mycarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active ">
+                            <img src="http://lorempixel.com/400/200/city">
+                        </div>
+                        <div class="item ">
+                            <img src="http://lorempixel.com/400/200/nature">
+                        </div>
+                        <div class="item ">
+                            <img src="http://lorempixel.com/400/200/technics">
+                        </div>
+                        <div class="item ">
+                            <img src="http://lorempixel.com/400/200/food">
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">Prev</a>
+                    <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">Next</a>
+                </div>
+            </div>
+            
+        </header>
+        </section>
+        <section class="container">
+            <div class="blankSpace"></div>
+                <div class="row">
+                    <button class="navbar-toggle alignLeft" data-toggle="collapse" data-target="#a">☰</button>
+                        <nav class="navbar navbar-default navbar-fixed-top">
+                            <div class="navbar-header navbar-brand navbar-collapse">
+                                Playing With Bootstrap
+                            </div>
+                            <div class="collapse navbar-collapse" id="a">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="app/pageOne.html">Page One</a></li>
+                                <li><a href="app/pageTwo.html">Page Two</a></li>
+                                <li><a href="app/pageThree.html">Page Three</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                        role="button">Products</a>
+                                        <ul class="dropdown-menu">                                    
+                                            <li class="btn btn-default dropButton"><a href="#">1</a></li>
+                                            <li class="btn btn-default dropButton"><a href="#">2</a></li>
+                                            <li class="btn btn-default dropButton"><a href="#">3</a></li>
+                                            <li class="btn btn-default dropButton"><a href="#">4</a></li>
+                                            <li class="btn btn-default dropButton"><a href="#">5</a></li>
+                                        </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        </nav>
+                    </div>
+
+            
+
+            <div class="row">
+                <div class="col-md-10 col-sm-12 colColor">
+                    <a class="btn btn-warning btn-lg" href="app\testing.html">To Test Site</a>
+                </div>
+                <div class="col-md-2 col-sm-12 colColor">Two</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-12 colColor">
+                    <ul class="list-group">
+                        <li class="list-group-item">List One</li>
+                        <li class="list-group-item">List Two</li>
+                        <li class="list-group-item">List Three</li>
+                        <li class="list-group-item">List Four</li>
+                    </ul>
+                </div>
+                <div class="col-md-5 col-sm-12 colColor">First Column test</div>
+                <div class="col-md-5 col-sm-12 colColor">Second Column no</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>                            
+                    <p>>Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens. Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams. Pestilentia est plague haec decaying ambulabat mortuos. Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis. Alii missing oculis aliorum sicut serpere crabs nostram. Putridi braindead odores kill and infect, aere implent left four dead.</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>                            
+                            <p>Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens. Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams. Pestilentia est plague haec decaying ambulabat mortuos. Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis. Alii missing oculis aliorum sicut serpere crabs nostram. Putridi braindead odores kill and infect, aere implent left four dead.</p>                            
+                            <p>Lucio fulci tremor est dark vivos magna. Expansis creepy arm yof darkness ulnis witchcraft missing carnem armis Kirkman Moore and Adlard caeruleum in locis. Romero morbo Congress amarus in auras. Nihil horum sagittis tincidunt, zombie slack-jawed gelida survival portenta. The unleashed virus est, et iam zombie mortui ambulabunt super terram. Souless mortuum glassy-eyed oculos attonitos indifferent back zom bieapoc alypse. An hoc dead snow braaaiiiins sociopathic incipere Clairvius Narcisse, an ante? Is bello mundi z?</p>                            
+                            <p>In Craven omni memoria patriae zombieland clairvius narcisse religionis sunt diri undead historiarum. Golums, zombies unrelenting et Raimi fascinati beheading. Maleficia! Vel cemetery man a modern bursting eyeballs perhsaps morbi. A terrenti flesh contagium. Forsitan deadgurl illud corpse Apocalypsi, vel staggering malum zomby poenae chainsaw zombi horrifying fecimus burial ground. Indeflexus shotgun coup de poudre monstra per plateas currere. Fit de decay nostra carne undead. Poenitentiam violent zom biehig hway agite RE:dead pœnitentiam! Vivens mortua sunt apud nos night of the living dead.</p>                
+                        </div>            
+                    </div>
+            <div class="row">
+                    <div class="col-md-4 col-sm-12 text-center">
+                        <button class="btn btn-success btn-lg">Success</button>
+                    </div>
+                    <div class="col-md-4 col-sm-12 btn btn-danger btn-lg">Click Me Danger</div>
+                    <div class="col-md-4 col-sm-12 btn btn-warning btn-lg">Click me Warning</div>
+            </div>
+        </section> 
+        
+
+    </body>
+
+</html>
